@@ -1,0 +1,133 @@
+{
+  // 🧩 UI & Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+  "workbench.sideBar.location": "right",
+
+  // 🧠 File Save & Clean-up
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+
+  // ✨ Formatter & Tailwind Sort
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 100,
+  "prettier.plugins": ["prettier-plugin-tailwindcss"],
+
+  // ⚡ Tailwind IntelliSense (clsx/cva helper)
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+
+  // 🧩 TypeScript + JS Auto Import
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "javascript.preferences.includePackageJsonAutoImports": "on",
+
+  // 🧠 Emmet & React Snippets
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescriptreact": "html"
+  },
+  "reactSnippets.settings.prettierEnabled": true,
+
+  // 💬 Git & Terminal
+  "git.autofetch": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // 🤖 GitLens + Copilot
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": { "markdown": true },
+
+  // 🧹 Spell Checker (Bangla + custom)
+  "cSpell.userWords": [
+    "adminsdk",
+    "akta",
+    "Amxp",
+    "baki",
+    "daqctd",
+    "datai",
+    "dekhanu",
+    "dekhte",
+    "diye",
+    "Fdwd",
+    "Flby",
+    "Gvbti",
+    "Iifb",
+    "kebol",
+    "kichu",
+    "korar",
+    "kore",
+    "onno",
+    "parbe",
+    "percels",
+    "theke",
+    "YWVAP",
+    "একবার",
+    "ট্রাই",
+    "দেখায়",
+    "ধরেও",
+    "পেলে",
+    "ফলাফল",
+    "ফেরত",
+    "ব্রাউজারে"
+  ],
+  "cSpell.ignorePaths": ["**/translation.json", "**/src/"],
+  "cSpell.ignoreRegExpList": ["\"[^\"]+\"\\s*:\\s*\"[^\"]+\""],
+  "cSpell.dictionaryDefinitions": [
+    { "name": "bangla", "path": "./bangla-words.txt", "addWords": true }
+  ],
+  "cSpell.dictionaries": ["bangla"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-user": {
+      "name": "custom-dictionary-user",
+      "path": "~/.cspell/custom-dictionary-user.txt",
+      "addWords": true,
+      "scope": "user"
+    }
+  },
+  "cSpell.enabledSchemes": {
+    "output": true
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "github.copilot.chat.agent.autoFix": true,
+  "github.copilot.chat.alternateGeminiModelFPrompt.enabled": true,
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "github.copilot.chat.anthropic.tools.websearch.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.fontFamily": "'Fira Code iScript', 'Fira Code', monospace",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }
+}
