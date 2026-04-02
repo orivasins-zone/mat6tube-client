@@ -1,0 +1,17 @@
+import React from "react";
+
+const Container = ({ children, className = "", fluid = false }) => {
+  return (
+    <div
+      className={`
+        ${fluid ? "w-full" : "max-w-7xl mx-auto"}
+        px-4
+        ${className}
+      `}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default Container;
